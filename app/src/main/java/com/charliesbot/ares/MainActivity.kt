@@ -14,34 +14,26 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.charliesbot.ares.ui.theme.AresTheme
 
 class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            AresTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    enableEdgeToEdge()
+    setContent {
+      AresTheme {
+        Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+          Greeting(name = "Android", modifier = Modifier.padding(innerPadding))
         }
+      }
     }
+  }
 }
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+  Text(text = "Hello $name!", modifier = modifier)
 }
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    AresTheme {
-        Greeting("Android")
-    }
+  AresTheme { Greeting("Android") }
 }
