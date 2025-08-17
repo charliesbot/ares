@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ares"
 include(":app")
+include(":core")
