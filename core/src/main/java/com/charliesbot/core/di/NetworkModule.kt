@@ -1,5 +1,6 @@
 package com.charliesbot.core.di
 
+import com.charliesbot.core.common.Constants
 import com.charliesbot.core.data.remote.auth.AuthApi
 import okhttp3.OkHttpClient
 import org.koin.core.qualifier.named
@@ -20,7 +21,7 @@ val networkModule = module {
   // Auth Retrofit
   single<Retrofit>(named(ApiQualifiers.AUTH_API)) {
     Retrofit.Builder()
-      .baseUrl("https://rssapp.charliesbot.dev/")
+      .baseUrl(Constants.AUTH_BASE_URL)
       .client(get())
       .addConverterFactory(GsonConverterFactory.create())
       .build()
@@ -29,7 +30,7 @@ val networkModule = module {
   // Feedly Retrofit (for future use)
   single<Retrofit>(named(ApiQualifiers.FEEDLY_API)) {
     Retrofit.Builder()
-      .baseUrl("https://cloud.feedly.com/v3/")
+      .baseUrl(Constants.FEEDLY_BASE_URL)
       .client(get())
       .addConverterFactory(GsonConverterFactory.create())
       .build()
