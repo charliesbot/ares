@@ -7,5 +7,5 @@ sealed class Route {
 
   @Serializable data object Login : Route()
 
-  @Serializable data object Feed : AppBackStack.RequiresAuth
+  @Serializable data object Feed : Route(), AppBackStack.RequiresAuth
 }
