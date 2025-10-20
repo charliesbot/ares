@@ -31,7 +31,6 @@ fun AppNavigation() {
         entryProvider =
             entryProvider {
                 entry<Route.Login> { LoginScreen() }
-
                 entry<Route.Feed> { FeedScreen() }
             },
     )
