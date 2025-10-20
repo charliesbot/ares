@@ -17,8 +17,6 @@ dependencyResolutionManagement {
   repositories {
     google()
     mavenCentral()
-    // TODO - remove this when Navigation 3 Adaptive doesn't need SNAPSHOT anymore
-    maven { url = uri("https://androidx.dev/snapshots/builds/13617490/artifacts/repository") }
   }
 }
 

@@ -53,12 +53,9 @@ dependencies {
     implementation(libs.androidx.material3)
     // Koin
     implementation(libs.koin.androidx.compose)
-    
-    // Navigation 3
-    implementation(libs.androidx.navigation3.runtime)
-    implementation(libs.androidx.navigation3.ui)
-    implementation(libs.androidx.lifecycle.viewmodel.navigation3)
-    implementation(libs.androidx.compose.adaptive.navigation3)
+
+    // Navigation
+    implementation(libs.androidx.navigation.compose)
 
     // Tests
     testImplementation(libs.junit)
