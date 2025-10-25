@@ -1,11 +1,7 @@
 package com.charliesbot.ares.navigation
 
-import kotlinx.serialization.Serializable
-
-@Serializable
-sealed class Route {
-
-  @Serializable data object Login : Route()
-
-  @Serializable data object Feed : Route(), AppBackStack.RequiresAuth
+object Routes {
+    const val LOGIN = "login"
+    const val FEED = "feed"
+    const val AUTHENTICATED = "authenticated"
 }

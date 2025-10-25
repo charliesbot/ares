@@ -4,4 +4,4 @@ import com.charliesbot.core.di.coreModule
 import com.charliesbot.features.auth.di.authFeatureModule
 import org.koin.core.module.Module
 
-val appModule: List<Module> = coreModule + authFeatureModule + navigationModule
+val appModule: List<Module> = coreModule + authFeatureModule

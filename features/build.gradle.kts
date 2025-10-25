@@ -57,6 +57,9 @@ dependencies {
     implementation(libs.koin.androidx.compose)
     implementation(libs.koin.core)
 
+    // Navigation
+    implementation(libs.androidx.navigation.compose)
+
     // Chrome Custom Tabs
     implementation(libs.androidx.browser)
 
